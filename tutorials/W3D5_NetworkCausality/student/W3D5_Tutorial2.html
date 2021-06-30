@@ -1531,7 +1531,7 @@
 <div class="cell tag_remove-input docutils container">
 <div class="cell_output docutils container">
 <script type="application/vnd.jupyter.widget-view+json">
-{"version_major": 2, "version_minor": 0, "model_id": "f9e0af1f02e34a17b1b57bdedd07acca"}
+{"version_major": 2, "version_minor": 0, "model_id": "05ed2c5c45a3486492aa7cbd55b17220"}
 </script></div>
 </div>
 </div>
@@ -1654,7 +1654,7 @@
 <div class="cell tag_remove-input docutils container">
 <div class="cell_output docutils container">
 <script type="application/vnd.jupyter.widget-view+json">
-{"version_major": 2, "version_minor": 0, "model_id": "9d065be535044df9b3efb1074b9c3a34"}
+{"version_major": 2, "version_minor": 0, "model_id": "b7bd133165744ed19a990194b253427d"}
 </script></div>
 </div>
 <p><strong>Video correction</strong>: the connectivity graph plots and associated explanations in this and other videos show the wrong direction of connectivity (the arrows should be pointing the opposite direction). This has been fixed in the figures above.</p>
@@ -1692,7 +1692,7 @@
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Correlation matrix of A and R: 0.36293298241778194
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Correlation matrix of A and R: 0.3629329824177816
 </pre></div>
 </div>
 <img alt="../../../_images/W3D5_Tutorial2_26_1.png" src="../../../_images/W3D5_Tutorial2_26_1.png"/>
@@ -1703,7 +1703,7 @@
 <div class="cell tag_remove-input docutils container">
 <div class="cell_output docutils container">
 <script type="application/vnd.jupyter.widget-view+json">
-{"version_major": 2, "version_minor": 0, "model_id": "404f65c98bdd47f8aaf3632133cc2dcc"}
+{"version_major": 2, "version_minor": 0, "model_id": "67320a35641f4b62bfbca5eb1739fcec"}
 </script></div>
 </div>
 </div>
@@ -1736,7 +1736,7 @@
 </div>
 <div class="cell_output docutils container">
 <script type="application/vnd.jupyter.widget-view+json">
-{"version_major": 2, "version_minor": 0, "model_id": "8ee0cd35c24e43b5bf357c6ff70563d8"}
+{"version_major": 2, "version_minor": 0, "model_id": "5a7ff31e85e04c00a82591e1a55afd26"}
 </script></div>
 </div>
 <p>Of course there is some variability due to randomness in <span class="math notranslate nohighlight">\(A\)</span>. Let’s average over a few trials and find the relationship.</p>
@@ -1804,7 +1804,7 @@
 </div>
 <div class="cell_output docutils container">
 <script type="application/vnd.jupyter.widget-view+json">
-{"version_major": 2, "version_minor": 0, "model_id": "f5d5ce055a0c444ebbe0fbb61aeb9239"}
+{"version_major": 2, "version_minor": 0, "model_id": "9a9b1168689a4b1c82f0f652704f8c15"}
 </script></div>
 </div>
 </div>
@@ -1830,7 +1830,7 @@
 <div class="cell tag_remove-input docutils container">
 <div class="cell_output docutils container">
 <script type="application/vnd.jupyter.widget-view+json">
-{"version_major": 2, "version_minor": 0, "model_id": "2e0fdc046a3c4a8d82f958fed7c5d322"}
+{"version_major": 2, "version_minor": 0, "model_id": "61c60c036e7b4709878a7f244c3a946f"}
 </script></div>
 </div>
 <p>Now for the takeaway. We know that for large systems correlation ≠ causation. But what about when we coarsely sample the large system? Do we get better at estimating the <em>effective</em> causal interaction between groups (=average of weights) from the correlation between the groups?</p>
@@ -1893,14 +1893,7 @@ We are assuming that the connectivity is random. In real brains, the neurons tha
 
 <span class="nn">mtrand.pyx</span> in <span class="ni">numpy.random.mtrand.RandomState.multivariate_normal</span><span class="nt">()</span>
 
-<span class="nn">&lt;__array_function__ internals&gt;</span> in <span class="ni">svd</span><span class="nt">(*args, **kwargs)</span>
-
-<span class="nn">/opt/hostedtoolcache/Python/3.7.10/x64/lib/python3.7/site-packages/numpy/linalg/linalg.py</span> in <span class="ni">svd</span><span class="nt">(a, full_matrices, compute_uv, hermitian)</span>
-<span class="g g-Whitespace">   </span><span class="mi">1658</span> 
-<span class="g g-Whitespace">   </span><span class="mi">1659</span>         <span class="n">signature</span> <span class="o">=</span> <span class="s1">'D-&gt;DdD'</span> <span class="k">if</span> <span class="n">isComplexType</span><span class="p">(</span><span class="n">t</span><span class="p">)</span> <span class="k">else</span> <span class="s1">'d-&gt;ddd'</span>
-<span class="ne">-&gt; </span><span class="mi">1660</span>         <span class="n">u</span><span class="p">,</span> <span class="n">s</span><span class="p">,</span> <span class="n">vh</span> <span class="o">=</span> <span class="n">gufunc</span><span class="p">(</span><span class="n">a</span><span class="p">,</span> <span class="n">signature</span><span class="o">=</span><span class="n">signature</span><span class="p">,</span> <span class="n">extobj</span><span class="o">=</span><span class="n">extobj</span><span class="p">)</span>
-<span class="g g-Whitespace">   </span><span class="mi">1661</span>         <span class="n">u</span> <span class="o">=</span> <span class="n">u</span><span class="o">.</span><span class="n">astype</span><span class="p">(</span><span class="n">result_t</span><span class="p">,</span> <span class="n">copy</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
-<span class="g g-Whitespace">   </span><span class="mi">1662</span>         <span class="n">s</span> <span class="o">=</span> <span class="n">s</span><span class="o">.</span><span class="n">astype</span><span class="p">(</span><span class="n">_realType</span><span class="p">(</span><span class="n">result_t</span><span class="p">),</span> <span class="n">copy</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
+<span class="nn">&lt;__array_function__ internals&gt;</span> in <span class="ni">dot</span><span class="nt">(*args, **kwargs)</span>
 
 <span class="ne">KeyboardInterrupt</span>: 
 </pre></div>
